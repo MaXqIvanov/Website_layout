@@ -1,3 +1,83 @@
-.App {
-  
+.custom_bg {
+    background-color: black !important;
+}
+.navbar{
+    min-height: 80px !important;
+}
+.nav{
+    color: rgb(0, 0, 0);
+    @media(min-width: 1200px){
+        color: white;
+        margin-left: -10px;
+    }
+    @media(min-width: 1460px){
+        margin-left: -110px;
+    }
+    @media(min-width: 1550px){
+        margin-left: -150px;
+    }
+}
+.navbar-brand{
+    background-image: url('./assets/logo\ \(3\).svg');
+    height: 34.53px;
+    width: 120px;
+    min-width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 64px;
+    @media(max-width: 1250px){
+        margin-left: 40px;
+    }
+    @media(max-width: 630px){
+        margin-left: 20px;
+    }
+}
+.navbar-toggler{
+    margin-right: 64px !important;
+    @media(max-width: 630px){
+        margin-right: 20px !important;
+    }
+}
+.nav-elem{
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    @media(max-width: 1200px){
+        font-weight: 500;
+    }
+}
+.nav-basket{
+    position: relative;
+    margin-right: 36px;
+    background-image: url('./assets/basket\ 1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    width: 36px;
+    cursor: pointer;
+    @media(min-width: 1300px){
+        margin-right: 86px;
+    }
+
+    @media(max-width: 1200px){
+        background-image: url('./assets/basket\ 1\ copy.svg');
+    }
+}
+.nav-basket-badge{
+    position: absolute;
+    background: #FCB500;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -7px;
+    right: -5px;
 }

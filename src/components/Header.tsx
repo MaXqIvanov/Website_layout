@@ -1,26 +1,50 @@
 import React from 'react';
-import { NavDropdown, Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Offcanvas } from 'react-bootstrap';
 
 export const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
+    // <Navbar bg="transparent" variant="dark" expand="x-lg" className="custom_bg">
+    //   <Navbar.Brand href="#home" className="navbar-brand"></Navbar.Brand>
+    //   <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    //   <Navbar.Collapse id="basic-navbar-nav">
+    //     <Nav className="me-auto nav">
+    //       <div className="nav-elem">FAQ</div>
+    //       <div className="nav-elem">Оплата и доставка</div>
+    //       <div className="nav-elem">Возврат</div>
+    //       <div className="nav-elem">Исследования</div>
+    //       <div className="nav-elem">Личный кабинет</div>
+    //       <div className="nav-elem">8 8 (800) 600-09-90</div>
+    //     </Nav>
+    //   </Navbar.Collapse>
+    // </Navbar>
+    <Navbar bg="transparent" variant="dark" expand="xl" className="custom_bg" collapseOnSelect>
+      <Navbar.Brand title="Вернуться на главную" className="main_logo_div"></Navbar.Brand>
+      <Navbar.Toggle className="main_nav_button" aria-controls="offcanvasNavbar" />
+      <Navbar.Offcanvas
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+        placement="end"
+        collapseOnSelect
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav className="me-auto nav w-100 и justify-content-center">
+            <div className="nav-elem ">FAQ</div>
+            <div className="nav-elem">Оплата и доставка</div>
+            <div className="nav-elem">Возврат</div>
+            <div className="nav-elem">Исследования</div>
+            <div className="nav-elem">Личный кабинет</div>
+            <div className="nav-elem">8 8 (800) 600-09-90</div>
           </Nav>
-        </Navbar.Collapse>
-      </Container>
+          <div className="nav-basket">
+            <div className="nav-basket-badge">
+              <div>1</div>
+            </div>
+          </div>
+        </Offcanvas.Body>
+      </Navbar.Offcanvas>
     </Navbar>
   );
 };
