@@ -8,3 +8,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*::-webkit-scrollbar {
+  width: 10px; /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* цвет дорожки */
+  border-radius: 25px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #b8e5ff; /* цвет плашки */
+  border-radius: 20px; /* закругления плашки */
+  border: 2px solid #b8e5ff; /* padding вокруг плашки */
+}
