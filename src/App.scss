@@ -63,7 +63,7 @@
         margin-right: 86px;
     }
 
-    @media(max-width: 1200px){
+    @media(max-width: 1199px){
         background-image: url('./assets/basket\ 1\ copy.svg');
     }
 }
@@ -84,4 +84,53 @@
 }
 .offcanvas-body{
     padding: 20px;
+}
+.side_logo{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-image: url('./assets/logo\ \(3\)\ copy.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 200px;
+    background-position: center;
+}
+.offcanvas-header{
+    .navbar-brand {
+        @media(max-width: 1200px){
+            margin-left: 10px;
+        }
+    }
+}
+.offcanvas-body{
+    @media(max-width: 1199px){
+        padding-right: 0px;
+        .nav-basket{
+            position: absolute !important;
+            bottom: 20px;
+            right: 0px;
+            height: 52px;
+            width: 56px;
+        }
+        .nav-basket-badge{
+            width: 25px;
+            height: 25px;
+            font-size: medium;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        .nav-elem{
+            width: 100%;
+            transition: all linear 0.15s;
+            &:hover{
+                background: black;
+                border-top-left-radius: 25px;
+                border-end-start-radius: 25px;
+                padding-left: 10px;
+                color: #fcda28;
+            }
+        }
+    }
 }

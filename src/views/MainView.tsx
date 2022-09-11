@@ -65,8 +65,10 @@ export const MainView = () => {
           </div>
           <div className={styles.block_card_center}>
             <div className={styles.block_card_img}></div>
-            <div className={styles._block_card_text}></div>
-            <div className={styles.block_card_btn}></div>
+            <div className={styles._block_card_text}>
+              + Бесплатная доставка<span>Специальная цена</span>
+            </div>
+            <div className={styles.block_card_btn}>Оформить заказ!</div>
           </div>
         </div>
       </div>
