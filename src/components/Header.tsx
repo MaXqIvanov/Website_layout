@@ -13,10 +13,12 @@ export const Header = () => {
         collapseOnSelect
       >
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title id="offcanvasNavbarLabel"></Offcanvas.Title>
+          <Offcanvas.Title id="offcanvasNavbarLabel">
+            <Navbar.Brand title="Вернуться на главную" className="side_logo"></Navbar.Brand>
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav className="me-auto nav w-100 и justify-content-center">
+          <Nav className="me-auto nav w-100 justify-content-center">
             <div className="nav-elem ">FAQ</div>
             <div className="nav-elem">Оплата и доставка</div>
             <div className="nav-elem">Возврат</div>
