@@ -9,13 +9,7 @@
     color: rgb(0, 0, 0);
     @media(min-width: 1200px){
         color: white;
-        margin-left: -10px;
-    }
-    @media(min-width: 1460px){
-        margin-left: -110px;
-    }
-    @media(min-width: 1550px){
-        margin-left: -150px;
+        margin-left: -2vw;
     }
 }
 .navbar-brand{
@@ -44,7 +38,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 30px;
     cursor: pointer;
     @media(max-width: 1200px){
         font-weight: 500;
@@ -56,8 +50,8 @@
     background-image: url('./assets/basket\ 1.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 32px;
-    width: 36px;
+    height: 34px;
+    width: 38px;
     cursor: pointer;
     @media(min-width: 1300px){
         margin-right: 86px;
